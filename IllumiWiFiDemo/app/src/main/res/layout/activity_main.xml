@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.mechatronika.illumiwifi.led.MainActivity">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adres IP illumiWiFi LED: "
+                    />
+
+
+                <EditText
+                    android:id="@+id/editTextAdresIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="192.168.1.1"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kolor bieżący:"
+                        />
+
+                    <View
+                        android:id="@+id/viewKolorBiezacy"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#000000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kolor domyślny:"
+                        />
+
+                    <View
+                        android:id="@+id/viewKolorDomyslny"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#000000"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Czerwony"
+                />
+
+            <SeekBar
+                android:id="@+id/seekBarCzerwony"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:max="255"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zielony"
+                />
+
+            <SeekBar
+                android:id="@+id/seekBarZielony"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:max="255"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Niebieski"
+                />
+
+            <SeekBar
+                android:id="@+id/seekBarNiebieski"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:max="255"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/buttonWyslijBiezacyKolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wyślij bieżący kolor"
+                />
+
+            <Button
+                android:id="@+id/buttonUstawBiezacyKolorJakoDomyslny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ustaw bieżący kolor jako domyślny"
+                />
+
+
+            <Button
+                android:id="@+id/buttonPobierzKolory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pobierz kolory z illumiWiFi"
+                />
+
+
+            <Button
+                android:id="@+id/buttonWyslijBiezacyKolorZPrzejsciemBarw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wyślij bieżący kolor z przejściem barw"
+                />
+
+            <Button
+                android:id="@+id/buttonPobierzInformacje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pobierz wersje oprogramowania i MAC illumiWiFi"
+                />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
